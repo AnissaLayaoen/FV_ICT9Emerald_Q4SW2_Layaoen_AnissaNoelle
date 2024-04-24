@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Q4 Practice 3</title>
+	<style>
+		body{
+			background-image: url("file:///Users/kristinelayaoen/Downloads/Cute%20aesthetic%20rainbow.jpeg");
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+  			background-size: cover;
+}
+
+	</style>
+</head>
+<body>
+<center>
+	<br><br><br>
+	<h1 style="font-family: Verdana;"> Mini Calculator</h1>
+	<p style="text-decoration: underline;"> Input the numbers you want below </p>
+	<div class="col-md-6" id="box">
+		<form class="form-group">
+			<br><br>
+			<label>Enter the 1st number:</label>
+				<input type="number" class="form-control" id="num1">
+				<br><br><br>
+			<label>Enter the 2nd number:</label>
+				<input type="number" class="form-control" id="num2">
+				<!-- Labels -->
+				<br><br>
+				<button class="btn btn-danger" onclick="Add()">Add</button>
+				<button class="btn btn-warning" onclick="multiply()">Product</button>
+				<button class="btn btn-success" onclick="check()">Check if Equal</button>
+				<button class="btn btn-primary" onclick="subtract()">Subtract</button>
+				<button class="btn btn-info" onclick="divide()">Divide</button>
+				<!-- Buttons -->
+		</form>
+	</div>
+</center>
+	
+	<script type="text/javascript">
+		function Add(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var sum = Number(num1) + Number(num2);
+
+			window.alert('The sum of two numbers is: ' + sum);
+		}
+
+		function multiply(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var prod = Number(num1) * Number(num2);
+
+			window.alert('The product of two numbers is: ' + prod);
+		}
+
+		function check(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var check = Number(num1) == Number(num2);
+
+			window.alert('Are the two numbers equal? Answer: ' + check);
+		}
+
+		function subtract(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var subt = Number(num1) - Number(num2);
+
+			window.alert('The sum of two numbers is: ' + subt);
+		}
+
+		function divide(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+			var dvde = Number(num1) / Number(num2);
+
+			window.alert('The quotient of two numbers is: ' + dvde);
+		}
+
+	</script>
+	<!-- Window Alert Code-->
+	<br><br>
+	<p style="margin-left: 50px;">References: <a href="https://www.pinterest.com/pin/cute-aesthetic-rainbow--735142339189814418/">Rainbow Background</a></p>
+
+</body>
+</html>
